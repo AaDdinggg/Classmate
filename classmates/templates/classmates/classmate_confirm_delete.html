@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: url('https://wallpapercosmos.com/w/middle-retina/d/7/a/208602-2048x1456-desktop-hd-enhypen-background-image.jpg') center center fixed; /* Replace 'your-image-url.jpg' with the path to your image */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: black;
+        }
+
+        .delete-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Sure na jud ka?</title>
+</head>
+<body>
+
+<div class="delete-container">
+    <h1>Classmate Delete</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+</body>
+</html>

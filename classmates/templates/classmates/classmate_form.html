@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: url('https://wallpapercosmos.com/w/middle-retina/0/9/c/208600-2000x1593-desktop-hd-enhypen-wallpaper-photo.jpg') center center fixed; /* Replace 'your-image-url.jpg' with the path to your image */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Classmate Edit</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+</body>
+</html>

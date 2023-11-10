@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: url('https://e1.pxfuel.com/desktop-wallpaper/876/240/desktop-wallpaper-cyjil-s-tweet-enhypen-aesthetic-laptop.jpg') center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #000000;
+        }
+
+        .details-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Classamtes</title>
+</head>
+<body>
+
+<div class="details-container">
+    <h1>Classmate Details</h1>
+    <h2>Name: {{ object.firstname }} {{ object.lastname }}</h2>
+    <p>Age: {{ object.age }}</p>
+    <p>Gender: {{ object.gender }}</p>
+    <p>Address: {{ object.address }}</p>
+</div>
+
+</body>
+</html>
